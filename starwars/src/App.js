@@ -15,7 +15,7 @@ const App = () => {
     )
   }
   useEffect(grab, [])
-  console.log(data)
+  console.log(data) 
   if (data.length === 0 ) return <h1>loading...</h1>
     return (
       <div className="App">

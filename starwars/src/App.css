@@ -4,6 +4,11 @@
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  font-size: 80px;
+  animation-name: to-red;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
 }
 
 .Cards {
@@ -13,3 +18,17 @@
   width:100%;
   border: purple solid 1px
 }
+
+/* keyframes */ 
+
+@keyframes to-red {
+  33% {
+      color: #443e3e;
+  }   
+  66% {
+      color:red;
+  }
+  100% {
+    color: #443e3e;
+  }
+  }

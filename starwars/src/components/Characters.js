@@ -7,12 +7,12 @@ export default function Characters(props) {
         <Card.Group>
        <Card>
          <Card.Content>
-           <Card.Header>{props.name}</Card.Header>
-           <Card.Meta>{props.birth_year}</Card.Meta>
-           <Card.Description>{props.hair_color}</Card.Description>
-           <Card.Description>{props.height}</Card.Description>
-           <Card.Description>{props.eye_color}</Card.Description>
-           <Card.Description>{props.gender}</Card.Description>
+           <Card.Header className="card-header"><span className="name"> {props.name}</span></Card.Header>
+           <Card.Meta>Birth Year:<br></br><span className="attribute">  {props.birth_year}</span></Card.Meta>
+           <Card.Description>Hair: <br></br><span className="attribute">  {props.hair_color}</span></Card.Description>
+           <Card.Description>Height: <br></br><span className="attribute">  {props.height}</span></Card.Description>
+           <Card.Description>Eyes:<br></br> <span className="attribute">  {props.eye_color}</span></Card.Description>
+           <Card.Description>Gender:<br></br><span className="attribute">  {props.gender} </span></Card.Description>
          </Card.Content>
        </Card>
      </Card.Group>

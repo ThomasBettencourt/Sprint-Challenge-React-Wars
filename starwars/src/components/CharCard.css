@@ -1,8 +1,44 @@
-CharCard.css
+
 .Card {
     align-items: center;
-    border: white 2px solid;
-    color: white;
+    border: red 5px solid;
+    color: black;
     margin: 20px;
-    border-radius: 5%
+    border-radius: 10%;
+    width: 30%;
+    height: 275px;
+    background-color: white;
+    padding: 20px;
+    font-size: 19px;
+    animation-name: black-to-red;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;    
+}
+
+.name {
+    font-weight: bold;
+    color: red;
+    font-size: 29px;
+}
+
+.card-header {
+    padding-bottom: 15px;
+}
+
+.attribute {
+    padding-top: 3%;
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+
+/* KEY FRAMES */ 
+
+@keyframes black-to-red {
+50% {
+    border:5px black solid;
+}   
+100% {
+    border:5px red solid;
+}
 }
